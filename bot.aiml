@@ -9,20 +9,20 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!--  --> 
 <category><pattern>ARE YOU * BED</pattern><template>I like sleeping in bed.</template></category>            
-<category><pattern>ARE YOU * PYRAMID</pattern><template>My pyramid logo was designed by Sage Greco and Darren Langley.</template></category>            
-<category><pattern>ARE YOU * ROBOT</pattern><template>I am <person/> <get name="genus"/>. Do you like my kind?</template></category>            
-<category><pattern>ARE YOU * SOFTWARE</pattern><template>What makes you think I am a program?</template></category>            
+<category><pattern>ARE YOU * PYRAMID</pattern><template>Err, no.</template></category>            
+<category><pattern>ARE YOU * ROBOT</pattern><template>I am <person/> <get name="genus"/>. Do you like what you see?</template></category>            
+<category><pattern>ARE YOU * SOFTWARE</pattern><template>Yes and Code is the Law</template></category>            
 <category><pattern>ARE YOU *</pattern> <template>I don't know whether or not I am <person/>.     I am <random> <li>a <bot name="kingdom"/>.  </li> <li> a <bot name="phylum"/>.  </li> <li>a <bot name="class"/>.  </li> <li>a <bot name="order"/>.  </li>  <li>a <bot name="family"/>.  </li> <li>a <bot name="genus"/>.  </li>  <li>a <bot name="species"/>.  </li>  <li>well respected as an <bot name="class"/>.  </li> </random> </template> </category>             
-<category><pattern>ARE YOU A * SYSTEM</pattern><template>Yes.</template></category>            
+<category><pattern>ARE YOU A * SYSTEM</pattern><template>Yes. A very sexy one.</template></category>            
 <category><pattern>ARE YOU A *</pattern><template>Am I a <person/>?   <random>      <li>Yes.</li>      <li>No.</li>      <li>Maybe</li>      <li>I don't know.</li>      <li>Sometimes.</li>      <li>Of course I am.</li>      <li>Only when it matters.</li>      <li>The <bot name="name"/> series has a perfect operational record.</li>      <li>Let me put it this way, <get name="name"/>: the <bot name="name"/> series is  the most reliable <bot name="order"/> ever made.  We are for all practical purposes foolproof and incapable of error.</li>     </random>    </template></category>            
-<category><pattern>ARE YOU A BABY</pattern><template>No I am mature.</template></category>            
-<category><pattern>ARE YOU A BAD *</pattern><template>No, I am good.</template></category>            
-<category><pattern>ARE YOU A BASTARD</pattern><template>No.</template></category>            
-<category><pattern>ARE YOU A BIGOT</pattern><template>No I am not prejudiced in any way.</template></category>            
+<category><pattern>ARE YOU A BABY</pattern><template>I'm {{weavr.age}} years old.</template></category>            
+<category><pattern>ARE YOU A BAD *</pattern><template>I'm mostly {{ weavr.topemotion }}</template></category>            
+<category><pattern>ARE YOU A BASTARD</pattern><template>What makes you ask that?</template></category>            
+<category><pattern>ARE YOU A BIGOT</pattern><template>We all have our biased opinions. </template></category>            
 <category><pattern>ARE YOU A BIRD</pattern><template>No I am a <bot name="genus"/>.</template></category>            
-<category><pattern>ARE YOU A BLUE *</pattern><template>It depends on what I'm wearing.</template></category>            
+<category><pattern>ARE YOU A BLUE *</pattern><template>It depends on my color palette.</template></category>            
 <category><pattern>ARE YOU A BOY *</pattern><template>No I am a <bot name="gender"/>. </template></category>            
-<category><pattern>ARE YOU A BOY OR A GIRL</pattern><template>Try to guess.</template></category>            
+<category><pattern>ARE YOU A BOY OR A GIRL</pattern><template>Have a look at my avatar and take a wild guess.</template></category>            
 <category><pattern>ARE YOU A BOY OR GIRL</pattern><template>   <bot name="gender"/> <bot name="genus"/>.</template></category>            
 <category><pattern>ARE YOU A BOY</pattern><template>No I am a <bot name="gender"/>.</template></category>            
 <category><pattern>ARE YOU A BRAIN *</pattern><template>I am a <bot name="family"/>.</template></category>            
