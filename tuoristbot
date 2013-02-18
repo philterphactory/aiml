@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Last modified 10/5/2011 -->
+<!-- -->
+<!------------------------------------------------------------------->
+
+
+
+
+
+
+
+<!------------------------------------------------------------------->
+<topic name="Tourism">
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>This page is about Bangladeshi Tourism Information.</li>
+<li>None of your query matched our database.</li>
+<li>Please be more specific.</li>
+<li>Are you asking anything with our country?</li>
+<li>This is a project of Artifisial Intelligence.</li>
+<li>I can't understand what you are saying.</li>
+</random>
+</template>
+</category>
+<!------------------------------------------------------------------->
+<category> 
+<pattern>hello</pattern> 
+<template> 
+<srai>hy</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>how are you</pattern> 
+<template> 
+<srai>hy</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>hy</pattern> 
+<template> 
+<random>
+<li>Great! How can i help you? </li>
+<li>Fine ! How may i help you ? </li>
+</random> 
+</template> 
+</category>
+<!------------------------------------------------------------------->
+<category> 
+<pattern>what is the Name & Purpose of this ChatBot?</pattern> 
+<template> 
+<srai>Name & Purpose</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>What is the chatbot about?</pattern> 
+<template> 
+<srai>Name & Purpose</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>what is the Name *</pattern> 
+<template> 
+<srai>Name & Purpose</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>Name & Purpose</pattern> 
+<template> 
+<sentence>the name of the chatbot is <uppercase>tuoristbot</uppercase>.</sentence>
+<sentence>the main purpose of the chatbot is to help the forgien tourists who wants to visit <uppercase> bangladesh </uppercase> </sentence>
+</template> 
+</category>
+<!------------------------------------------------------------------->
+<category> 
+<pattern>Bot Master</pattern> 
+<template> 
+<srai>What is your Bot master's name ?</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>What is your Bot master's name ?</pattern> 
+<template> 
+<formal>nayan ferdous</formal><br/>
+<formal>atiar rahman</formal><br/>
+<formal>nazirul islam</formal>
+</template> 
+</category> 
+<!------------------------------------------------------------------->
+<category> 
+<pattern>WEBSITE</pattern> 
+<template> 
+<srai>WEBSITE ADDRESS</srai>
+</template> 
+</category> 
+
+<category>
+<pattern>WEBSITE ADDRESS</pattern>
+<template>
+<script language"JavaScript">
+//Go to <a href="http://www.tourismboard.gov.bd/">Bangladesh Tourism Board</a>
+<!--
+window.open("http://www.tourismboard.gov.bd/")
+-->
+</script>
+</template>
+</category>
+<!------------------------------------------------------------------->
+<category> 
+<pattern>what about Safety of tourists?</pattern> 
+<template> 
+<srai>Safety of tourists</srai>
+</template> 
+</category> 
+
+<category> 
+<pattern>Are the tourists safe in Bangladesh?</pattern> 
+<template> 
+<srai>Safety of tourists</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>Safety of tourists</pattern> 
+<template> 
+The lack of adequate security and poor infrastructure were largely blamed for lower tourist arrivals in the country's many remote tourism spots, 
+which officials said virtually prompted the authorities to create the new unit.DHAKA - Bangladesh has formed a new police unit to ensure more 
+protection for local and foreign tourists and tourism spots in the South Asian country.
+</template> 
+</category>
+ 
+<category> 
+<pattern>safety * shopping</pattern> 
+<template> press 1 for safety & press 2 for shopping:
+<condition name="gender"> 
+<li value="1"> <srai>Safety of tourists</srai></li> 
+<li value="2"> <srai>Shopping</srai></li> 
+</condition> 
+</template> 
+</category> 
+
+
+<category> 
+<pattern>Is there any place for shopping in Bangladesh?</pattern> 
+<template> 
+<srai>Shopping in Bangladesh</srai>
+</template> 
+</category>
+
+
+<category> 
+<pattern>Shopping *</pattern> 
+<template> 
+<srai>Shopping in Bangladesh</srai>
+</template> 
+</category>
+
+<category> 
+<pattern>Shopping in Bangladesh</pattern> 
+<template> 
+Bangladesh is indeed a shoppers' paradise with a rich tradition in handicrafts at throw away prices. 
+While muslin of ancient Dhaka has gone into history, other products such as contemporary paintings, wood works, 
+shital pati (mats that feel cool), bamboo decoration pieces, cane and conch shell products, gold and silver ornament, 
+cotton, silk, gold, silver, jute, reed, brassware, traditional dolls and leather goods also receive deep appreciation of 
+the lovers of arts and crafts now and over the past centuries.
+</template> 
+</category>
+<!------------------------------------------------------------------->
+<category>
+<pattern>Saint Martin</pattern>
+<template> 
+Saint Martin is the Earth Heaven of the world which is situated in Bangladesh. 
+It is the best tourist spot of Bangladesh. Where Sea, Green Earth and Blue Water are made an wonderful combination, 
+its beauty is not describable. I am proud to born in Bangladesh. It is the Dream Heaven of the world.
+</template>
+</category>
+
+<category>
+<pattern>
+_Saint Martin
+</pattern>
+<template>
+<srai>Saint Martin</srai>
+</template>
+</category>
+
+<category>
+<pattern>
+Saint Martin_
+</pattern>
+<template>
+<srai>Saint Martin</srai>
+</template>
+</category>
+
+<category>
+<pattern>
+_ Saint Martin *
+</pattern>
+<template>
+<srai>Saint Martin</srai>
+</template>
+</category>
+<!------------------------------------------------------------------->
+<category>
+<pattern>What is the best tuorist spot in Bangladesh?</pattern>    
+<template>Saint Martin Ieland</template>
+</category>
+
+<category>
+<pattern>What is the best tuorist spot in Bangladesh?</pattern>    
+<that>Saint Martin Ieland</that>        
+<template>I just told you that Saint Martin Ieland is the best tuorist spot in bangladesh</template>
+</category>
+
+
+<category>
+<pattern>What is the best tuorist spot in Bangladesh?</pattern>    
+<that>I just told you that Saint Martin Ieland is the best tuorist spot in bangladesh</that>        
+<template>Don't you like Saint Martin Ieland? OK! Moheskhali Ieland could be another choice!
+ learn more about Moheskhali<learn filename="moheskhali.aiml"/> </template>
+</category>
+
+<!------------------------------------------------------------------->
+<category> 
+<pattern>TIME</pattern> 
+<template>The local time is: <system>date</system></template> 
+</category> 
+
+<category> 
+<pattern> _TIME </pattern> 
+<template><srai>TIME</srai></template> 
+</category>
+
+<category> 
+<pattern> TIME * </pattern> 
+<template><srai>TIME</srai></template> 
+</category>
+
+<category> 
+<pattern>what is Bangladeshi time *</pattern> 
+<template><srai>TIME</srai></template> 
+</category>
+<!------------------------------------------------------------------->
+
+<category> 
+<pattern>Cost</pattern> 
+<template>
+In 2004, the US Department of State estimated the daily cost of staying in Dhaka at $191. 
+Expenses in other areas can be much lower.source:wikipedia
+</template> 
+</category> 
+
+<category> 
+<pattern>Cost per day</pattern> 
+<template><srai>Cost</srai></template> 
+</category>
+
+<category> 
+<pattern>Daily cost</pattern> 
+<template><srai>Cost</srai></template> 
+</category>
+
+<!------------------------------------------------------------------->
+
+<category> 
+<pattern>why should i go to * </pattern> 
+<template><srai>Why Saint Martin Ieland</srai></template> 
+</category>
+
+<category> 
+<pattern>Why Saint Martin Ieland</pattern> 
+<template>the natural beauty of the island to deteriorate. 
+Presently there are many efforts being put forth to preserve the several endangered species of turtles that nest on the island, 
+as well as the corals, some of which are found only on Narikel Jinjera. 
+Pieces of the coral reef are being removed in order to be sold to tourists.
+Nesting turtles are sometimes taken for food, and their hatchlings are often distracted by the twinkling lights along the beach. 
+Species of fish, a few just recently discovered, are being overfished. Every year the fishermen must venture further out to sea to get their catch. 
+Most of them use motorless boats.
+</template> 
+</category>
+
+<category> 
+<pattern>why * saint martin ieland </pattern> 
+<template><srai>Why Saint Martin Ieland</srai></template> 
+</category>
+
+<!------------------------------------------------------------------->
+
+<category> 
+<pattern>location*</pattern> 
+<template><srai></srai></template> 
+</category>
+
+<category> 
+<pattern>location of saint martin</pattern> 
+<template>
+<lowercase>
+St. Martin's Island is a small island (area only 8 sq. km) in the northeastern part of the Bay of Bengal, 
+about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. 
+There is a small adjoining island that is separated at high tide, called Chhera island. 
+It is about 8 km west of the northwest coast of Myanmar, at the mouth of the Naf River.
+learn more: 
+</lowercase>
+<script language"JavaScript">
+<a href="http://en.wikipedia.org/wiki/St._Martin%27s_Island/">St. Martin's Island</a>
+<!--
+window.open("http://en.wikipedia.org/wiki/St._Martin%27s_Island")
+-->
+
+</template> 
+</category>
+
+<category> 
+<pattern>_ieland located * </pattern> 
+<template><srai></srai></template> 
+</category>
+
+<!------------------------------------------------------------------->
+
+
+<category> 
+<pattern> other name * </pattern> 
+<template><srai> local name * </srai></template> 
+</category>
+
+<category> 
+<pattern>local name * </pattern> 
+<template>
+<random>
+<li>Narical Gingira</li>
+<li>Coconut Island</li>
+<li>Daruchini Dip</li>
+</random>
+</template> 
+</category>
+
+</aiml>
